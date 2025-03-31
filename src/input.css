@@ -1,0 +1,626 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Almendra+SC&family=Rajdhani:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Almendra+SC&family=Rajdhani:wght@300;400;500;600;700&family=Rancho&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Almendra+SC&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rancho&display=swap");
+
+/* Apply smooth scrolling to the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Apply fading animation to navbar links except the Home link */
+.smooth-scroll:not(.home-link) {
+  animation: scroll 2s linear; /* Change timing function here */
+}
+
+/* Define the scroll animation */
+@keyframes scroll {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+}
+
+/* ############################################### */
+/* media queries */
+/* Nano Small Screen (ns) */
+@media (max-width: 359px) {
+  /* Your CSS rules for small screens here */
+  .frame-container {
+    width: 90%;
+  }
+}
+
+/* Small small Screen (ss) */
+@media (min-width: 360px) and (max-width: 640px) {
+  /* Your CSS rules for small screens here */
+  .frame-container {
+    width: calc(100% - 20px); /*100% - 32px - default {16, 24, 32}*/
+  }
+}
+
+/* Small Screen (sm) */
+@media (min-width: 640px) and (max-width: 767px) {
+  /* Your CSS rules for small screens here */
+  .frame-container {
+    width: 94%;
+  }
+}
+
+/* Medium Screen (md) */
+@media (min-width: 768px) and (max-width: 1119px) {
+  /* Your CSS rules for medium screens here */
+  .frame-container {
+    width: 94%;
+  }
+}
+
+/* Large Screen (lg) */
+@media (min-width: 1120px) and (max-width: 1279px) {
+  /* Your CSS rules for large screens here */
+  .frame-container {
+    width: 90%;
+  }
+}
+
+/* Extra Large Screen (xl) */
+@media (min-width: 1280px) and (max-width: 1399px) {
+  /* Your CSS rules for extra large screens here */
+  .frame-container {
+    width: 90%;
+  }
+}
+
+/* 2 Extra Large Screen (2xl) */
+@media (min-width: 1400px) and (max-width: 1859px) {
+  /* Your CSS rules for 2 extra large screens here */
+  .frame-container {
+    width: 1344px;
+  }
+}
+
+/* 3 Extra Large Screen (3xl) */
+@media (min-width: 1860px) {
+  /* Your CSS rules for 3 extra large screens here */
+  .frame-container {
+    width: 1728px;
+  }
+}
+
+.rajdhani-light {
+  font-family: "Rajdhani", sans-serif;
+}
+
+.almendra-sc-regular {
+  font-family: "Almendra SC", serif;
+}
+
+.rancho-regular {
+  font-family: "Rancho", cursive;
+}
+
+.raleway {
+  font-family: "Raleway", sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item-left {
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  padding: 10px;
+  flex: 50%;
+}
+
+.hero-padding {
+  padding: 20px 80px;
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 945px) {
+  .flex-item-right,
+  .flex-item-left {
+    flex: 100%;
+  }
+
+  .hero-padding {
+    padding: 20px 20px;
+  }
+}
+
+@font-face {
+  font-family: "Jokerman";
+  src: url("../fonts/Jokerman\ Font.ttf");
+}
+
+.bg {
+  background-image: url("../resources/side-view-fried-meat-with-french-fries-ketchup.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.containerdiv {
+  background-color: rgba(0, 0, 0, 0.77);
+  padding: 2rem;
+  max-width: 90vw; /* Limit the width to prevent overflowing */
+}
+
+.signupdiv {
+  margin-top: 0px;
+}
+
+@media (max-width: 767px) {
+  /* Apply margin-top */
+  .signupdiv {
+    margin-top: 150px; /* Adjust the value according to your needs */
+  }
+}
+
+.div-width {
+  width: 90%;
+}
+
+.inner-div-width {
+  width: 50%;
+}
+
+.orders-div-width {
+  width: 60%;
+}
+
+.side-div-width {
+  width: 40%;
+}
+
+@media (max-width: 700px) {
+  .signleViewFLexDiv {
+    flex-direction: column;
+  }
+
+  .div-width {
+    width: 100%;
+  }
+
+  .inner-div-width {
+    width: 100%;
+  }
+}
+
+.main-width {
+  width: 60%;
+}
+
+@media (max-width: 1077px) {
+  .main-width {
+    width: 90%;
+  }
+}
+
+.min-width {
+  width: 20%;
+}
+
+@media (max-width: 800px) {
+  .min-width {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+.middle-box-width {
+  width: 40%;
+}
+
+.last-box-width {
+  width: 40%;
+}
+
+@media (max-width: 1290px) {
+  .min-width {
+    width: 50%;
+  }
+
+  .middle-box-width {
+    width: 50%;
+  }
+
+  .last-box-width {
+    width: 50%;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .middle-box-width {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .center {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .min-width {
+    width: 100%;
+  }
+
+  .last-box-width {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1120px) {
+  .orders-div-width {
+    width: 100%;
+  }
+  .side-div-width {
+    width: 100%;
+  }
+}
+
+@media (max-width: 446px) {
+  .side-div-width {
+    width: 100%;
+  }
+}
+
+/* Define keyframes for the animation */
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(50px) scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to the signup div */
+.signin-signup-div-animate {
+  /* Set initial state */
+  transform: translateY(50px) scale(0.8);
+  opacity: 0;
+
+  /* Apply animation */
+  animation: slideInFromBottom 1s ease-in-out 0.2s forwards; /* Adjust duration, delay, and easing as needed */
+}
+
+.food-cards {
+  width: 260px;
+}
+
+.line {
+  height: 1px;
+  width: 50px; /* Adjust the width of the lines as needed */
+  background-color: black; /* Adjust the color of the lines as needed */
+}
+
+.line::before,
+.line::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 50px; /* Adjust the width of the lines as needed */
+  background-color: black; /* Adjust the color of the lines as needed */
+}
+
+.line:first-child::before {
+  content: none;
+}
+
+.line:last-child::after {
+  content: none;
+}
+
+.serach-bar-width {
+  width: 50%;
+}
+@media (max-width: 900px) {
+  .serach-bar-width {
+    width: 90%;
+  }
+}
+
+/*  */
+
+.container-div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  margin: auto;
+}
+.container-div .box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  overflow: hidden;
+  margin-right: 15px;
+  margin-top: 45px;
+}
+.container:hover .box {
+  transform: rotateY(25deg);
+}
+.container .box:hover ~ .box {
+  transform: rotateY(-25deg);
+}
+.container .box:hover {
+  transform: rotateY(0deg) scale(1.25);
+  z-index: 1;
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+}
+.container .box .imgBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.container-div .box .imgBx:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #f00, #000);
+  z-index: 1;
+  opacity: 0;
+  transition: 0.5s;
+  mix-blend-mode: multiply;
+}
+.container-div .box:hover .imgBx:before {
+  opacity: 1;
+}
+.container-div .box .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container-div .box .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  padding: 20px;
+  align-items: flex-end;
+  box-sizing: border-box;
+}
+.container-div .box .content h2 {
+  color: #fff;
+  transition: 0.5s;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 20px;
+  transform: translateY(200px);
+  transition-delay: 0.3s;
+}
+.container-div .box:hover .content h2 {
+  transform: translateY(0px);
+}
+.container-div .box .content p {
+  color: #fff;
+  transition: 0.5s;
+  font-size: 14px;
+  transform: translateY(200px);
+  transition-delay: 0.4s;
+}
+.container-div .box:hover .content p {
+  transform: translateY(0px);
+}
+
+/* admin login */
+
+.backgrnd-img {
+  background-image: url("../resources/Group\ 68.png");
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+/* dashboard */
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .sidebar a {
+    float: left;
+  }
+
+  div.content {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+/* Slider */
+
+.slider-container {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.slider {
+  display: inline-flex;
+}
+
+.slide {
+  flex: 0 0 auto;
+  background-color: #EDEDED;
+  text-align: center;
+  margin-right: 20px; 
+  border-radius: 10px;
+}
+
+.slide-w-h-prd{
+  width: 166px; 
+  height: 240px;
+}
+
+.slide-w-h-hm{
+  width: 186px; 
+  height: 190px;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+}
+
+.modal-header, .modal-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.modal-header {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.modal-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal-body {
+  margin-bottom: 20px;
+}
+
+.modal-body input,
+.modal-body textarea {
+  padding: 6px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal-footer button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-footer .close-button {
+  background-color: #ccc;
+  color: #000;
+  margin-right: 10px;
+}
+
+.modal-footer .save-button {
+  background-color: #38a169;
+  color: #fff;
+}
+
+.modal-footer .close-button:hover {
+  background-color: #bbb;
+}
+
+.modal-footer .save-button:hover {
+  background-color: #2f855a;
+}
