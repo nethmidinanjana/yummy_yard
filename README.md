@@ -16,4 +16,17 @@ Yummy Yard is a dynamic e-commerce platform for online food ordering, built usin
 
 ## 📸 Screenshots
 
-
+<div style="display: flex;">
+  <img src="ss/1.png" width="250" />&nbsp;&nbsp;&nbsp;
+  <img src="ss/2.png" width="250" />&nbsp;&nbsp;&nbsp;
+  <img src="ss/3.png" width="250" />
+</div>
+<div style="display: flex;">
+  <img src="ss/3.png" width="250" />&nbsp;&nbsp;&nbsp;
+  <img src="ss/5.png" width="250" />&nbsp;&nbsp;&nbsp;
+  <img src="ss/6.png" width="250" />
+</div>
+<div style="display: flex;">
+  <img src="ss/7.png" width="250" />&nbsp;&nbsp;&nbsp;
+  <img src="ss/8.png" width="250" />
+</div>
