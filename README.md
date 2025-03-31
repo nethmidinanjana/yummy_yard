@@ -6,7 +6,7 @@ Yummy Yard is a dynamic e-commerce platform for online food ordering, built usin
 - 🛒 **Interactive Menu** – Browse and select food items easily.
 - 👤 **User Authentication** – Secure login and registration system.
 - 📦 **Order Management** – Place, track, and manage food orders.
-- 💳 **Payment Integration** – (Optional) Add online payment support.
+- 💳 **Payment Integration** – Add online payment support with PayHere.
 - 📊 **Admin Dashboard** – Manage users, orders, and menu items.
 
 ## 🛠️ Tech Stack
