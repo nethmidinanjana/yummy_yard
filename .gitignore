@@ -4,6 +4,8 @@
 .env.production
 .env.development
 
+.history/
+
 # Ignore system files
 .DS_Store
 Thumbs.db
